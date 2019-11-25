@@ -26,6 +26,19 @@ module.exports = {
             loader: "html-loader"
           }
         ]
+      },
+      {
+        test: /\.s?css$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
+      },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: { name: '/static/[name].[ext]'}
+          }
+        ]
       }
     ]
   },

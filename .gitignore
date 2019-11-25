@@ -3,3 +3,6 @@ node_modules/
 
 #Project
 dist/
+
+#Optional npm cache directory
+.npm
